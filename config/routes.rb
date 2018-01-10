@@ -1,9 +1,8 @@
 Rails.application.routes.draw do
   get 'pictures' => 'pictures#index'
 
-end
+  post 'pictures' => 'pictures#create'
+  get 'pictures/new' => 'pictures#new'
 
-class PicturesController < ApplicationController
-  def index
-  end
+  get 'pictures/:id' => 'pictures#show'
 end
