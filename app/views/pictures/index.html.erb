@@ -6,3 +6,9 @@
   <p><%= picture.title %>, <%= picture.artist %></p>
   <img src="<%= picture.url %>" alt="<%= picture.title %>">
 <% end %>
+
+<h1>Pictures created more than a month ago</h1>
+
+  <% @month.each do |picture| %>
+    <img src= "<%= picture.url %>" alt="<%= picture.title %>">
+  <% end %>

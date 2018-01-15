@@ -2,6 +2,8 @@ class PicturesController < ApplicationController
 
   def index
     @pictures = Picture.all
+    @month = Picture.month
+    @year = Picture.year
   end
 
   def show
@@ -53,5 +55,9 @@ def destroy
   @picture.destroy
   redirect_to "/pictures"
 end
+
+def month
+end
+
 
 end
