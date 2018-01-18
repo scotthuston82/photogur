@@ -3,7 +3,7 @@ class PicturesController < ApplicationController
   def index
     @pictures = Picture.all
     @month = Picture.month
-    @year = Picture.year
+    # @year = Picture.year
   end
 
   def show
@@ -32,8 +32,8 @@ class PicturesController < ApplicationController
   end
 
   def edit
-  @picture = Picture.find(params[:id])
-end
+    @picture = Picture.find(params[:id])
+  end
 
 def update
   @picture = Picture.find(params[:id])
@@ -56,8 +56,7 @@ def destroy
   redirect_to "/pictures"
 end
 
-def month
-end
-
+  def month
+  end
 
 end

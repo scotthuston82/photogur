@@ -13,4 +13,11 @@ Rails.application.routes.draw do
   patch 'pictures/:id' => "pictures#update"
 
     delete 'pictures/:id' => 'pictures#destroy'
+
+  get 'users/new' => 'users#new'
+  post 'users' => 'users#create'
+
+  get 'sessions/new' => 'sessions#new'
+  post 'sessions/new' => 'sessions#create'
+  delete 'sessions/new' => 'sessions#destroy'
 end

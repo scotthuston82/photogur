@@ -28,3 +28,4 @@ def self.pictures_by_year(year)
   end
   pictures
 end
+end
